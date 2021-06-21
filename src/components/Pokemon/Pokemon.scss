@@ -1,0 +1,18 @@
+$box-shadow-grey: #d6d6d6;
+
+.pokemon {
+    &__wrapper {
+        flex: 1 0 auto;
+        padding: 2rem;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        @media (min-width: 992px) {
+          grid-template-columns: repeat(4, 1fr); 
+        }
+        @media (max-width: 992px) and (min-width: 480px) {
+            grid-template-columns: repeat(3, 1fr); 
+        }
+        grid-gap: 50px;
+        justify-items: stretch;
+    }
+}
